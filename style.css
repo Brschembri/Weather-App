@@ -3,8 +3,34 @@ html {
           box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #45aaf2;
+}
+
+#wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+input {
+  background-color: white;
+  border: none;
+  border-radius: 3.5px;
+  height: 2.5rem;
+  width: 13rem;
+}
+
+img {
+  height: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

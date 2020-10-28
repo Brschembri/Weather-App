@@ -2,7 +2,31 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #45aaf2;
+}
+
+#wrapper {
+  width: 100%;
+  display: grid;
+}
+
+input {
+  background-color: white;
+  border: none;
+  border-radius: 3.5px;
+  height: 2.5rem;
+  width: 13rem;
+}
+
+img {
+  height: 5rem;
+}
