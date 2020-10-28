@@ -53,6 +53,9 @@ img {
 
 #city-header {
   text-align: center;
+  color: white;
+  font-weight: 400;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 #search-bar-form {
@@ -66,13 +69,43 @@ img {
   height: 2.5rem;
   width: 13rem;
   margin: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 #weather-icons {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+}
+
+.weather-day {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 500px) {
+  #search-bar-input {
+    width: 25rem;
+    height: 3rem;
+  }
+  #weather-icons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-left: 1.5rem;
+  }
+  #weather-day-wrap {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #city-header {
+    text-align: center;
+    font-size: 3rem;
+  }
+  #search-bar-input {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
