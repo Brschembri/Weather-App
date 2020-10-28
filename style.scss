@@ -43,7 +43,6 @@ img {
   color: white;
   font-weight: 400;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-
 }
 
 #search-bar-form {
@@ -57,7 +56,7 @@ img {
   border-radius: 3.5px;
   height: 2.5rem;
   width: 13rem;
-  margin: 1rem;
+  margin: 1.3rem;
   text-align: center;
   font-weight: 600;
   font-size: 1rem;
@@ -65,11 +64,10 @@ img {
 
 #weather-icons {
   display: inline-flex;
-  
 }
 
 .weather-day {
-     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 // Tablet Media Queries
@@ -77,6 +75,7 @@ img {
   #search-bar-input {
     width: 25rem;
     height: 3rem;
+    margin: 2rem;
   }
 
   #weather-icons {
@@ -84,18 +83,49 @@ img {
     padding-left: 1.5rem;
   }
 
-  #weather-day-wrap  {
+  #weather-day-wrap {
     justify-content: space-evenly;
   }
 
   #city-header {
-  // background: yellow;
-  text-align: center;
-  font-size: 3rem;
-}
+    // background: yellow;
+    text-align: center;
+    font-size: 3rem;
+  }
 
-#search-bar-input {
+  #search-bar-input {
     font-size: 2rem;
+  }
 }
 
+// Med Tablet Media Queries
+@media only screen and (min-width: 750px) {
+  #search-bar-input {
+    width: 35rem;
+    height: 3rem;
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 1024px) {
+  #search-bar-input {
+    width: 45rem;
+    height: 3.6rem;
+    margin: 2rem;
+  }
+
+  
+  #weather-day-wrap {
+    margin-top: .5rem;
+  }
+
+  #city-header {
+    // background: yellow;
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  #search-bar-input {
+    font-size: 2rem;
+  }
 }
