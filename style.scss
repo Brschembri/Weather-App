@@ -80,7 +80,7 @@ img {
 
   #weather-icons {
     justify-content: space-evenly;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
   }
 
   #weather-day-wrap {
@@ -114,6 +114,10 @@ img {
     margin: 2rem;
   }
 
+  #weather-icons {
+       padding-left: 8%;
+  }
+
   
   #weather-day-wrap {
     margin-top: .5rem;
@@ -128,4 +132,9 @@ img {
   #search-bar-input {
     font-size: 2rem;
   }
+
+  .weather-temp {
+      font-size: 1.5rem;
+  }
+
 }
