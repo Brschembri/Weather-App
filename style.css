@@ -20,6 +20,11 @@ html {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 input {
@@ -32,5 +37,20 @@ input {
 
 img {
   height: 5rem;
+}
+
+#city-header {
+  background: yellow;
+}
+
+#search-bar {
+  background: green;
+}
+
+#weather-icons {
+  background: red;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 /*# sourceMappingURL=style.css.map */

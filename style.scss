@@ -17,6 +17,8 @@ html {
 #wrapper {
   width: 100%;
   display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
 }
 
 input {
@@ -29,4 +31,18 @@ input {
 
 img {
   height: 5rem;
+}
+
+#city-header {
+    background: yellow;
+}
+
+
+#search-bar {
+    background: green;
+}
+
+#weather-icons {
+    background: red;
+    display: inline-flex;
 }
