@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
     <title>Weather App | Brandon Schembri</title>
   </head>
   <body>
     <div id="wrapper">
       <h1 id="city-header">Sydney, Au</h1>
-      <form id="search-bar">
+      <form id="search-bar-form">
         <label>
-          <input />
+          <input id="search-bar-input" type="text">
         </label>
       </form>
       <div id="weather-icons">
@@ -33,6 +37,11 @@
           alt=""
         />
         <h3 class="weather-temp">12</h3>
+      </div>
+      <div id="weather-day-wrap">
+        <h2 class="weather-day">Mon</h2>
+        <h2 class="weather-day">Tue</h2>
+        <h2 class="weather-day">Wed</h2>
       </div>
     </div>
     <script src="app.js"></script>

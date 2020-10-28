@@ -12,6 +12,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: #45aaf2;
+  font-family: "Montserrat", sans-serif;
 }
 
 #wrapper {
@@ -19,14 +20,18 @@ html {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-input {
-  background-color: white;
-  border: none;
-  border-radius: 3.5px;
-  height: 2.5rem;
-  width: 13rem;
+#weather-day-wrap {
+  display: flex;
+  flex-direction: row;
+  // gap: 3%;
+  justify-content: space-around;
 }
 
 img {
@@ -34,15 +39,25 @@ img {
 }
 
 #city-header {
-    background: yellow;
+  // background: yellow;
+  text-align: center;
 }
 
+#search-bar-form {
+  // background: green;
+  text-align: center;
+}
 
-#search-bar {
-    background: green;
+#search-bar-input {
+  background-color: white;
+  border: none;
+  border-radius: 3.5px;
+  height: 2.5rem;
+  width: 13rem;
+  margin: 1rem;
 }
 
 #weather-icons {
-    background: red;
-    display: inline-flex;
+  display: inline-flex;
+  align-content: center;
 }

@@ -14,6 +14,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: #45aaf2;
+  font-family: "Montserrat", sans-serif;
 }
 
 #wrapper {
@@ -25,14 +26,25 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-input {
-  background-color: white;
-  border: none;
-  border-radius: 3.5px;
-  height: 2.5rem;
-  width: 13rem;
+#weather-day-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 img {
@@ -40,17 +52,27 @@ img {
 }
 
 #city-header {
-  background: yellow;
+  text-align: center;
 }
 
-#search-bar {
-  background: green;
+#search-bar-form {
+  text-align: center;
+}
+
+#search-bar-input {
+  background-color: white;
+  border: none;
+  border-radius: 3.5px;
+  height: 2.5rem;
+  width: 13rem;
+  margin: 1rem;
 }
 
 #weather-icons {
-  background: red;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=style.css.map */
