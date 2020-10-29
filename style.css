@@ -80,6 +80,26 @@ img {
   outline: none;
 }
 
+#search-bar-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.294);
+  font-size: .8rem;
+}
+
+#search-bar-input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.294);
+  font-size: .8rem;
+}
+
+#search-bar-input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.294);
+  font-size: .8rem;
+}
+
+#search-bar-input::placeholder {
+  color: rgba(0, 0, 0, 0.294);
+  font-size: .8rem;
+}
+
 #search-bar-bttn {
   background-color: #f28d45;
   border: none;
@@ -123,6 +143,22 @@ img {
     margin-right: 0;
     font-size: 2rem;
   }
+  #search-bar-input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 1.5rem;
+  }
+  #search-bar-input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 1.5rem;
+  }
+  #search-bar-input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 1.5rem;
+  }
+  #search-bar-input::placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 1.5rem;
+  }
   #search-bar-bttn {
     height: 3rem;
     margin-top: 3rem;
@@ -150,6 +186,22 @@ img {
   #search-bar-input {
     width: 35rem;
     height: 3rem;
+  }
+  #search-bar-input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 2rem;
+  }
+  #search-bar-input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 2rem;
+  }
+  #search-bar-input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 2rem;
+  }
+  #search-bar-input::placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 2rem;
   }
   #search-bar-bttn {
     height: 3rem;
