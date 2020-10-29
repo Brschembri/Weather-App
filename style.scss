@@ -90,6 +90,15 @@ img {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
 // Tablet Media Queries
 @media only screen and (min-width: 500px) {
   #search-bar-input {
@@ -182,4 +191,48 @@ img {
   .weather-temp {
     font-size: 1.5rem;
   }
+
+
+  @media only screen and (min-width: 3840px ) {
+
+  img {
+  height: 5rem;
+}
+
+#city-header {
+  text-align: center;
+  font-size: 13rem;
+  color: white;
+  font-weight: 400;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+
+ #search-bar-input {
+    width: 90rem;
+    height: 7.2rem;
+  }
+
+  #search-bar-bttn {
+    height: 7.2rem;
+    width: 8rem;
+  }
+
+  img {
+  height: 11rem;
+}
+
+.weather-temp {
+    font-size: 3rem;
+}
+
+.weather-day {
+  font-size: 3rem;
+}
+
+#footer {
+ font-size:1.8rem;
+}
+  }
+
 }
