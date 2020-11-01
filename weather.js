@@ -9,9 +9,9 @@ class Weather {
   // GET Weather
   async getWeather() {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${this.apiKey}&q=${this.city}`
+      `http://api.weatherapi.com/v1/current.json?key=${this.apiKey}&q=${this.city}.json`
     );
-    //at the end put .json
+    
 
     const responseData = await response.json();
 
@@ -19,7 +19,7 @@ class Weather {
   }
 
   changeLocal(city, state, country) {
-    this.city = name;
+    this.city = city;
     this.state = region;
     this.country = country;
   }
