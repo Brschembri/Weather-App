@@ -67,10 +67,10 @@ img {
   outline: none;
 }
 
-  #search-bar-input::placeholder {
-      color: rgba(0, 0, 0, 0.294);
-      font-size: .8rem;
-  }
+#search-bar-input::placeholder {
+  color: rgba(0, 0, 0, 0.294);
+  font-size: 0.8rem;
+}
 
 #search-bar-bttn {
   background-color: #f28d45;
@@ -114,9 +114,9 @@ img {
     font-size: 2rem;
   }
 
-    #search-bar-input::placeholder {
-      color: rgba(0, 0, 0, 0.294);
-      font-size: 1.5rem;
+  #search-bar-input::placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 1.5rem;
   }
 
   #search-bar-bttn {
@@ -149,9 +149,9 @@ img {
     height: 3rem;
   }
 
-    #search-bar-input::placeholder {
-      color: rgba(0, 0, 0, 0.294);
-      font-size: 2rem;
+  #search-bar-input::placeholder {
+    color: rgba(0, 0, 0, 0.294);
+    font-size: 2rem;
   }
 
   #search-bar-bttn {
@@ -198,6 +198,17 @@ img {
 
   .weather-temp {
     font-size: 1.5rem;
+  }
+
+  #temp-min-max-day1 {
+    margin-left: -2.5rem;
+  }
+  #temp-min-max-day2 {
+    margin-left: -2.5rem;
+  }
+
+  #temp-min-max-day3 {
+    margin-left: -2.5rem;
   }
 
   @media only screen and (min-width: 3840px) {

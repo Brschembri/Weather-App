@@ -82,22 +82,22 @@ img {
 
 #search-bar-input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.294);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 #search-bar-input:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.294);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 #search-bar-input::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.294);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 #search-bar-input::placeholder {
   color: rgba(0, 0, 0, 0.294);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 #search-bar-bttn {
@@ -239,6 +239,15 @@ img {
   }
   .weather-temp {
     font-size: 1.5rem;
+  }
+  #temp-min-max-day1 {
+    margin-left: -2.5rem;
+  }
+  #temp-min-max-day2 {
+    margin-left: -2.5rem;
+  }
+  #temp-min-max-day3 {
+    margin-left: -2.5rem;
   }
 }
 
