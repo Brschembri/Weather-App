@@ -10,9 +10,10 @@ class Data {
     // this.tempMaxC = document.getElementsByClassName("weather-temp");
     // this.tempMinC = document.getElementsByClassName("weather-temp-min");
     // this.pic = document.getElementsByClassName("weather-pic");
-    this.pic1 = document.getElementById("day1");
-    this.pic1 = document.getElementById("day2");
-    this.pic1 = document.getElementById("day3");
+    this.pic1 = document.getElementById("pic1");
+    this.pic2 = document.getElementById("pic2");
+    this.pic3 = document.getElementById("pic3");
+    
     this.icon = document.getElementById("w-icon");
     // this.day = document.getElementsByClassName("weather-day");
   }
