@@ -19,9 +19,8 @@ class Weather {
     return responseData;
   }
 
-  changeLocal(city, state, country) {
+  changeLocal(city) {
     this.city = city;
-    this.state = region;
-    this.country = country;
   }
+  
 }
