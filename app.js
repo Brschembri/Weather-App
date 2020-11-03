@@ -4,6 +4,8 @@ const submitBtn = document.getElementById("search-bar-bttn");
 const searchBarInput = document.getElementById("search-bar-input");
 const weather = new Weather(`New York`, "New York", "United States");
 
+// Initialise weatherUI
+const weatherUI = new Data();
 
 // Event Listeners
 submitBtn.addEventListener("click", submitIt);
