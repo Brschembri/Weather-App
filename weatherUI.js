@@ -19,7 +19,7 @@ class Data {
   }
 
   paint(weather) {
-    // this.city.textContent = weather.location.name;
+     this.city.textContent = weather.location.name;
     this.tempMinC1.textContent = weather.forecast.forecastday[0].day.mintemp_c;
     this.tempMaxC1.textContent = weather.forecast.forecastday[0].day.maxtemp_c;
     this.tempMinC2.textContent = weather.forecast.forecastday[1].day.mintemp_c;
