@@ -16,9 +16,6 @@ document.getElementById("search-bar-bttn").addEventListener("click", (e) => {
   const newTxt = searchBarInput.value;
   const city = newTxt;
   weather.changeLocal(city);
-  // cityName.textContent = city.value;
-  // toString(city);
-  console.log(weather);
   getWeather();
 
   e.preventDefault();

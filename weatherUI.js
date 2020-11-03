@@ -19,21 +19,25 @@ class Data {
   }
 
   paint(weather) {
-     this.city.textContent = weather.location.name;
+    this.city.textContent = weather.location.name;
     this.tempMinC1.textContent = weather.forecast.forecastday[0].day.mintemp_c;
     this.tempMaxC1.textContent = weather.forecast.forecastday[0].day.maxtemp_c;
     this.tempMinC2.textContent = weather.forecast.forecastday[1].day.mintemp_c;
     this.tempMaxC2.textContent = weather.forecast.forecastday[1].day.maxtemp_c;
     this.tempMinC3.textContent = weather.forecast.forecastday[2].day.mintemp_c;
     this.tempMaxC3.textContent = weather.forecast.forecastday[2].day.maxtemp_c;
-    // this.pic1.setAttribute("src", weather_icon_url);
-    // this.pic1 = weather.forecast.forecastday[0].day.condition.icon;
-    this.pic2 = weather.forecast.forecastday[1].day.condition.icon;
-    this.pic3 = weather.forecast.forecastday[2].day.condition.icon;
-    //cdn.weatherapi.com/weather/64x64/day/119.png
-    //   this.icon.setAttribute("src", weather_icon_url);
+    this.pic1.setAttribute(
+      "src",
+      weather.forecast.forecastday[0].day.condition.icon
+    );
+    this.pic2.setAttribute(
+      "src",
+      weather.forecast.forecastday[1].day.condition.icon
+    );
+    this.pic3.setAttribute(
+      "src",
+      weather.forecast.forecastday[2].day.condition.icon
+    );
 
-    // Testing
-    //  console.log(weather.forecast.forecastday[0].day.condition.icon);
   }
 }
