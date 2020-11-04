@@ -32,14 +32,16 @@ html {
 
 #c {
   margin-left: 0.8rem;
-  width: 2rem;
+  width: 1.5rem;
   cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 #f {
   margin-left: 0.8rem;
-  width: 2rem;
+  width: 1.5rem;
   cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 #wrapper {

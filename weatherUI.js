@@ -28,7 +28,7 @@ class Data {
     // Sets the city name
     this.city.textContent = weather.location.name;
 
-    // Sets temp
+    // Sets temp in C
     this.tempMinC1.textContent =
       weather.forecast.forecastday[0].day.mintemp_c + `°`;
     this.tempMaxC1.textContent =
@@ -41,6 +41,40 @@ class Data {
       weather.forecast.forecastday[2].day.mintemp_c + `°`;
     this.tempMaxC3.textContent =
       weather.forecast.forecastday[2].day.maxtemp_c + `°`;
+
+
+    // C button func
+    let cBttn = document.getElementById("c").addEventListener('click', (e) => {
+    this.tempMinC1.textContent =
+      weather.forecast.forecastday[0].day.mintemp_c + `°`;
+    this.tempMaxC1.textContent =
+      weather.forecast.forecastday[0].day.maxtemp_c + `°`;
+    this.tempMinC2.textContent =
+      weather.forecast.forecastday[1].day.mintemp_c + `°`;
+    this.tempMaxC2.textContent =
+      weather.forecast.forecastday[1].day.maxtemp_c + `°`;
+    this.tempMinC3.textContent =
+      weather.forecast.forecastday[2].day.mintemp_c + `°`;
+    this.tempMaxC3.textContent =
+      weather.forecast.forecastday[2].day.maxtemp_c + `°`;
+
+    });
+
+    // Sets temp in F
+    let fBttn = document.getElementById("f").addEventListener('click', (e) => {
+       this.tempMinC1.textContent =
+         weather.forecast.forecastday[0].day.mintemp_f + `°`;
+       this.tempMaxC1.textContent =
+         weather.forecast.forecastday[0].day.maxtemp_f + `°`;
+       this.tempMinC2.textContent =
+         weather.forecast.forecastday[1].day.mintemp_f + `°`;
+       this.tempMaxC2.textContent =
+         weather.forecast.forecastday[1].day.maxtemp_f + `°`;
+       this.tempMinC3.textContent =
+         weather.forecast.forecastday[2].day.mintemp_f + `°`;
+       this.tempMaxC3.textContent =
+         weather.forecast.forecastday[2].day.maxtemp_f + `°`;
+    })
 
       // Sets icons
     this.pic1.setAttribute(
