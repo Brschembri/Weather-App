@@ -26,12 +26,18 @@ class Data {
     let day2aformat = dayjs(day2bformat).format("dddd");
 
     this.city.textContent = weather.location.name;
-    this.tempMinC1.textContent = weather.forecast.forecastday[0].day.mintemp_c;
-    this.tempMaxC1.textContent = weather.forecast.forecastday[0].day.maxtemp_c;
-    this.tempMinC2.textContent = weather.forecast.forecastday[1].day.mintemp_c;
-    this.tempMaxC2.textContent = weather.forecast.forecastday[1].day.maxtemp_c;
-    this.tempMinC3.textContent = weather.forecast.forecastday[2].day.mintemp_c;
-    this.tempMaxC3.textContent = weather.forecast.forecastday[2].day.maxtemp_c;
+    this.tempMinC1.textContent =
+      weather.forecast.forecastday[0].day.mintemp_c + `°`;
+    this.tempMaxC1.textContent =
+      weather.forecast.forecastday[0].day.maxtemp_c + `°`;
+    this.tempMinC2.textContent =
+      weather.forecast.forecastday[1].day.mintemp_c + `°`;
+    this.tempMaxC2.textContent =
+      weather.forecast.forecastday[1].day.maxtemp_c + `°`;
+    this.tempMinC3.textContent =
+      weather.forecast.forecastday[2].day.mintemp_c + `°`;
+    this.tempMaxC3.textContent =
+      weather.forecast.forecastday[2].day.maxtemp_c + `°`;
     this.pic1.setAttribute(
       "src",
       weather.forecast.forecastday[0].day.condition.icon

@@ -4,6 +4,7 @@ let cityName = document.getElementById("city-header");
 const searchBarInput = document.getElementById("search-bar-input");
 const weather = new Weather(`Sydney`);
 
+
 // Initialise weatherUI
 const weatherUI = new Data();
 
@@ -21,12 +22,16 @@ document.getElementById("search-bar-bttn").addEventListener("click", (e) => {
   e.preventDefault();
 });
 
-// function submitIt(e) {
-// //  let newCity = cityName.textContent = searchBarInput.value;
 
-//   // cityName.textContent = (submitBtn.textContent);
-//   e.preventDefault();
-// }
+function errorDiag() {
+   searchBarInput.style.cssText = "background-color:red;";
+   searchBarInput.value = "Please Enter Valid City";
+   setTimeout(() => {
+     searchBarInput.style.cssText =
+       "background-color:white; transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);";
+     searchBarInput.value = "";
+   }, 1500);
+}
 
 function getWeather() {
   weather
@@ -34,5 +39,9 @@ function getWeather() {
     .then((results) => {
       weatherUI.paint(results);
     })
-    .catch((err) => console.log(err));
+
+    .catch((err) => errorDiag());
+
+    // Console logs the error
+    // .catch((err) => console.log(err));
 }

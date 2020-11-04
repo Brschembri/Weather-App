@@ -67,6 +67,7 @@ img {
   outline: none;
 }
 
+
 #search-bar-input::placeholder {
   color: rgba(0, 0, 0, 0.294);
   font-size: 0.8rem;
@@ -96,8 +97,8 @@ img {
 }
 
 .weather-temp-min {
-    font-size: .9rem;
-  }
+  font-size: 0.9rem;
+}
 
 #footer {
   position: fixed;
@@ -107,7 +108,6 @@ img {
   color: white;
   text-align: center;
 }
-
 
 // Tablet Media Queries
 @media only screen and (min-width: 500px) {
@@ -145,8 +145,6 @@ img {
     text-align: center;
     font-size: 3rem;
   }
-
-
 }
 
 // Med Tablet Media Queries
@@ -166,9 +164,6 @@ img {
     width: 2.3rem;
     font-size: 1.76rem;
   }
-
-  
-
 }
 
 // Desktop
