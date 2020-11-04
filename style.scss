@@ -15,6 +15,26 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+#header-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+#c {
+  margin-left: 0.8rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+#f {
+  margin-left: 0.8rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
 #wrapper {
   width: 100%;
   display: grid;
@@ -67,7 +87,6 @@ img {
   outline: none;
 }
 
-
 #search-bar-input::placeholder {
   color: rgba(0, 0, 0, 0.294);
   font-size: 0.8rem;
@@ -94,6 +113,7 @@ img {
 
 .weather-day {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.7rem;
 }
 
 .weather-temp-min {
@@ -140,6 +160,10 @@ img {
     justify-content: space-evenly;
   }
 
+  .weather-day {
+    font-size: 1.3rem;
+  }
+
   #city-header {
     // background: yellow;
     text-align: center;
@@ -163,6 +187,10 @@ img {
     height: 3rem;
     width: 2.3rem;
     font-size: 1.76rem;
+  }
+
+  .weather-day {
+    font-size: 1.5rem;
   }
 }
 
@@ -209,6 +237,10 @@ img {
     font-size: 1.125rem;
   }
 
+  .weather-day {
+    font-size: 1.6rem;
+  }
+
   #temp-min-max-day1 {
     margin-left: -2.5rem;
   }
@@ -218,6 +250,12 @@ img {
 
   #temp-min-max-day3 {
     margin-left: -2.5rem;
+  }
+
+  @media only screen and (min-width: 1680px) {
+    .weather-day {
+      font-size: 2.1rem;
+    }
   }
 
   @media only screen and (min-width: 3840px) {
