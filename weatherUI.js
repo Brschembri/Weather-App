@@ -7,18 +7,24 @@ class Data {
     this.tempMinC2 = document.getElementById("weather-temp-min2");
     this.tempMaxC3 = document.getElementById("weather-temp-max3");
     this.tempMinC3 = document.getElementById("weather-temp-min3");
-    // this.tempMaxC = document.getElementsByClassName("weather-temp");
-    // this.tempMinC = document.getElementsByClassName("weather-temp-min");
-    // this.pic = document.getElementsByClassName("weather-pic");
     this.pic1 = document.getElementById("pic1");
     this.pic2 = document.getElementById("pic2");
     this.pic3 = document.getElementById("pic3");
-
-    this.icon = document.getElementById("w-icon");
+    this.day0 = document.getElementById("day0");
+    this.day1 = document.getElementById("day1");
+    this.day2 = document.getElementById("day2");
     // this.day = document.getElementsByClassName("weather-day");
   }
 
   paint(weather) {
+    // Formatting date to days of the week
+    let day0bformat = weather.forecast.forecastday[0].date;
+    let day0aformat = dayjs(day0bformat).format("dddd");
+    let day1bformat = weather.forecast.forecastday[1].date;
+    let day1aformat = dayjs(day1bformat).format("dddd");
+    let day2bformat = weather.forecast.forecastday[2].date;
+    let day2aformat = dayjs(day2bformat).format("dddd");
+
     this.city.textContent = weather.location.name;
     this.tempMinC1.textContent = weather.forecast.forecastday[0].day.mintemp_c;
     this.tempMaxC1.textContent = weather.forecast.forecastday[0].day.maxtemp_c;
@@ -39,5 +45,11 @@ class Data {
       weather.forecast.forecastday[2].day.condition.icon
     );
 
+    this.day0.textContent = day0aformat;
+    this.day1.textContent = day1aformat;
+    this.day2.textContent = day2aformat;
+
+    // testing
+    // console.log(weather.forecast.forecastday[0].date);
   }
 }

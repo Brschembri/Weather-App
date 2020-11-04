@@ -14,11 +14,7 @@
     <div id="wrapper">
       <h1 id="city-header">Sydney</h1>
       <form id="search-bar-form">
-        <input
-          id="search-bar-input"
-          type="text"
-          placeholder="Enter City"
-        />
+        <input id="search-bar-input" type="text" placeholder="Enter City" />
         <button id="search-bar-bttn" type="submit">✓</button>
       </form>
       <div id="weather-icons">
@@ -26,7 +22,7 @@
           class="weather-pic"
           id="pic1"
           src="https://www.flaticon.com/svg/static/icons/svg/149/149209.svg"
-          alt=""
+          alt="picture of weather condition"
         />
         <div id="temp-min-max-day1">
           <h3 class="weather-temp" id="weather-temp-max1">15°</h3>
@@ -36,7 +32,7 @@
           class="weather-pic"
           id="pic2"
           src="https://www.flaticon.com/svg/static/icons/svg/149/149209.svg"
-          alt=""
+          alt="picture of weather condition"
         />
         <div id="temp-min-max-day2">
           <h3 class="weather-temp" id="weather-temp-max2">14°</h3>
@@ -46,7 +42,7 @@
           class="weather-pic"
           id="pic3"
           src="https://www.flaticon.com/svg/static/icons/svg/149/149209.svg"
-          alt=""
+          alt="picture of weather condition"
         />
         <div id="temp-min-max-day3">
           <h3 class="weather-temp" id="weather-temp-max3">18°</h3>
@@ -54,9 +50,9 @@
         </div>
       </div>
       <div id="weather-day-wrap">
-        <h2 class="weather-day">Mon</h2>
-        <h2 class="weather-day">Tue</h2>
-        <h2 class="weather-day">Wed</h2>
+        <h2 class="weather-day" id="day0">Mon</h2>
+        <h2 class="weather-day" id="day1">Tue</h2>
+        <h2 class="weather-day" id="day2">Wed</h2>
       </div>
     </div>
 
@@ -67,5 +63,8 @@
     <script src="weather.js"></script>
     <script src="weatherUI.js"></script>
     <script src="app.js"></script>
+
+    <!-- day.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.4/dayjs.min.js" integrity="sha512-XZSHSEFj4QeE0G4pwy4tToyAhF2VXoEcF9CP0t1PSZMP2XHhEEB9PjM9knsdzcEKbi6GRMazdt8tJadz0JTKIQ==" crossorigin="anonymous"></script>
   </body>
 </html>
